@@ -2,7 +2,7 @@
 
 brew install fd fzf rg tmux
 
-ln -sv .gitconfig ~
-ln -sv .tmux.conf ~
-ln -sv .vim ~
-ln -sv .zshrc ~
+ln -sfv $PWD/.gitconfig ~
+ln -sfv $PWD/.tmux.conf ~
+ln -sfv $PWD/.vim ~
+ln -sfv $PWD/.zshrc ~
