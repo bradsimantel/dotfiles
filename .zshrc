@@ -16,6 +16,3 @@ zstyle ':vcs_info:git:*' formats ' %F{3}%b%f'
 # Set up the prompt
 setopt PROMPT_SUBST
 PROMPT='%F{5}%n@%m%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
-
-# Add alias to undo last commit
-alias oops='git reset --soft HEAD~1'
