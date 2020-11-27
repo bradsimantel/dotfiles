@@ -3,4 +3,4 @@ name = Brad Simantel
 email = brad@ottter.com
 
 [alias]
-undo = 'git reset --soft HEAD~1'
+undo = reset --soft HEAD~1
