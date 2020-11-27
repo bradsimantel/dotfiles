@@ -30,6 +30,7 @@ let g:airline#extensions#ale#enabled = 1
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'gabrielelana/vim-markdown'
 Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jremmen/vim-ripgrep'
 Plug 'pangloss/vim-javascript'
