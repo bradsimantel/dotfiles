@@ -4,3 +4,9 @@ email = brad@ottter.com
 
 [alias]
 undo = reset --soft HEAD~1
+
+[diff]
+tool = vimdiff
+
+[merge]
+tool = vimdiff
