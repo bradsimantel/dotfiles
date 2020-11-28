@@ -18,4 +18,4 @@ setopt PROMPT_SUBST
 PROMPT='%F{5}%n@%m%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
 # Quick jump to this directory
-alias dotfiles="cd $PWD"
+alias dotfiles="cd ~/Projects/bradsimantel/dotfiles"
