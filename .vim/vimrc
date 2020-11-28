@@ -27,6 +27,8 @@ let g:ale_fixers = {'javascript': ['prettier'], 'json': ['prettier']}
 
 let g:airline#extensions#ale#enabled = 1
 
+let g:markdown_enable_spell_checking = 0
+
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
