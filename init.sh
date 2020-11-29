@@ -1,6 +1,6 @@
 #!/bin/esh
 
-brew install fd fzf rg tmux
+brew install fd fzf rg tmux git
 
 ln -sfv $PWD/.gitconfig ~
 ln -sfv $PWD/.tmux.conf ~
