@@ -15,7 +15,8 @@ zstyle ':vcs_info:git:*' formats ' %F{3}%b%f'
  
 # Set up the prompt
 setopt PROMPT_SUBST
-PROMPT='%F{5}%n@%m%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
+tmux="" && [[ "$TMUX" ]] && tmux="#tmux"
+PROMPT='%F{5}%n@%m${tmux}%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
 # Quick jump to directories 
 alias dot="cd ~/Projects/bradsimantel/dotfiles"
