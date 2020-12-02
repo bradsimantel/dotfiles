@@ -4,7 +4,7 @@ colorscheme dim
 
 set number
 set nowrap
-set smartcase
+set ignorecase smartcase
 set cursorline
 set smartindent expandtab shiftwidth=2 softtabstop=2
 set backspace=indent,eol,start
@@ -28,6 +28,8 @@ let g:ale_fixers = {'javascript': ['prettier'], 'json': ['prettier']}
 let g:airline#extensions#ale#enabled = 1
 
 let g:markdown_enable_spell_checking = 0
+
+let g:htl_all_templates = 1
 
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
