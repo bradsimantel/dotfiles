@@ -16,6 +16,7 @@ set belloff=all
 set undofile undodir=~/.vim/undodir
 set scrolloff=999
 set mouse=a
+set clipboard=unnamed
 
 set rtp+=/usr/local/opt/fzf
 nnoremap <silent> <C-p> :FZF<CR>
