@@ -15,6 +15,7 @@ set list listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set belloff=all
 set undofile undodir=~/.vim/undodir
 set scrolloff=999
+set mouse=a
 
 set rtp+=/usr/local/opt/fzf
 nnoremap <silent> <C-p> :FZF<CR>
