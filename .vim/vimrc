@@ -1,7 +1,10 @@
+" Turn on syntax highlighting
 syntax on
 
+" Color scheme
 colorscheme dim
 
+" Flags
 set number
 set nowrap
 set ignorecase smartcase
@@ -16,26 +19,38 @@ set belloff=all
 set undofile undodir=~/.vim/undodir
 set scrolloff=999
 
+" Configure FZF
 set rtp+=/usr/local/opt/fzf
 nnoremap <silent> <C-p> :FZF<CR>
 
+" Show file tree
 let g:netrw_liststyle = 3
 
-let g:ale_fix_on_save = 1
-let g:ale_linters = {'javascript': ['eslint'], 'json': ['eslint']}
-let g:ale_fixers = {'javascript': ['prettier'], 'json': ['prettier'], 'html': ['prettier'], 'css': ['prettier']}
-
+" Configure ALE for linting/fixing
 let g:airline#extensions#ale#enabled = 1
+let g:ale_fix_on_save = 1
+let g:ale_linters = {}
+let g:ale_fixers = {}
 
+" Ale fixers
+let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['json'] = ['prettier']
+let g:ale_fixers['html'] = ['prettier']
+let g:ale_fixers['css'] = ['prettier']
+
+" ALE linters
+let g:ale_linters['javascript'] = ['eslint']
+let g:ale_linters['json'] = ['eslint']
+
+" Turn off spell checking
 let g:markdown_enable_spell_checking = 0
 
-let g:htl_all_templates = 1
-
+" Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'gabrielelana/vim-markdown'
-Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jremmen/vim-ripgrep'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-commentary'
