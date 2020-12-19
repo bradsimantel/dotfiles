@@ -14,7 +14,7 @@ set backspace=indent,eol,start
 set noswapfile nobackup
 set colorcolumn=81
 set incsearch hlsearch
-set list listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+" set list listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set belloff=all
 set undofile undodir=~/.vim/undodir
 set scrolloff=999
