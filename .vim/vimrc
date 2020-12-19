@@ -18,6 +18,7 @@ set list listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set belloff=all
 set undofile undodir=~/.vim/undodir
 set scrolloff=999
+set clipboard=unnamed
 
 " Configure FZF
 set rtp+=/usr/local/opt/fzf
