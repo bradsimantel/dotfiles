@@ -47,6 +47,7 @@ let g:markdown_enable_spell_checking = 0
 
 " Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'ackyshake/VimCompletesMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'gabrielelana/vim-markdown'
