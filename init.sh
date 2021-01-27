@@ -1,6 +1,6 @@
 #!/bin/esh
 
-brew install fd fzf rg tmux git
+brew install fd fzf rg tmux git vim
 
 ln -sfv $PWD/.gitconfig ~
 ln -sfv $PWD/.globalgitignore ~
