@@ -35,6 +35,12 @@ let g:ale_fix_on_save = 1
 " Turn off spell checking
 let g:markdown_enable_spell_checking = 0
 
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
