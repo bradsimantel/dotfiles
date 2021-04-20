@@ -31,15 +31,13 @@ let g:ale_fixers = ['prettier', 'gofmt']
 let g:airline#extensions#ale#enabled = 1
 let g:ale_fix_on_save = 1
 
-" Turn off spell checking
-let g:markdown_enable_spell_checking = 0
-
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jremmen/vim-ripgrep'
-Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'
