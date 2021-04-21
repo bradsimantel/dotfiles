@@ -9,7 +9,7 @@ set number
 set nowrap
 set ignorecase smartcase
 set cursorline
-set smartindent expandtab shiftwidth=2 softtabstop=2
+set smartindent expandtab shiftwidth=2 tabstop=2 softtabstop=2
 set backspace=indent,eol,start
 set noswapfile nobackup
 set colorcolumn=81
