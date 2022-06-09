@@ -23,5 +23,3 @@ PROMPT='%F{5}%n@%m${tmux}%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
 # Quick jump to directories 
 alias dot="cd ~/Projects/bradsimantel/dotfiles"
-alias brain="cd ~/Projects/bradsimantel/brain"
-alias todo="vim ~/Projects/bradsimantel/brain/todo.md"
