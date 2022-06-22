@@ -15,7 +15,7 @@ set noswapfile nobackup
 set colorcolumn=81
 set incsearch hlsearch
 set belloff=all
-set undofile undodir=~/.vim/undodir
+set undofile undodir=~/.config/nvim/undodir
 set scrolloff=999
 set clipboard=unnamed
 
@@ -32,7 +32,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_fix_on_save = 1
 
 " Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'jremmen/vim-ripgrep'

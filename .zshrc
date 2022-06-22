@@ -21,5 +21,6 @@ setopt PROMPT_SUBST
 tmux="" && [[ "$TMUX" ]] && tmux="#tmux"
 PROMPT='%F{5}%n@%m${tmux}%f %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
-# Quick jump to directories 
+# Aliases
 alias dot="cd ~/Projects/bradsimantel/dotfiles"
+alias vim="nvim"
