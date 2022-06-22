@@ -4,6 +4,7 @@ My environment setup.
 
 ## Setup
 
-Clone the repo down and run `init.sh` to `brew install` dependencies and create symlinks into your home directory, then open Neovim and run `:PlugInstall`.
+Download and install `nvm`, then `nvm install 16`.
 
-This setup doesn't include Node, which should be installed separately with `nvm`.
+Clone the repo down and run `init.sh` to `brew install` dependencies and create symlinks into your home directory. Open Neovim and run `:PlugInstall`, then run `:Copilot setup`.
+
