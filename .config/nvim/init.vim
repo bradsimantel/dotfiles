@@ -35,9 +35,9 @@ let g:ale_fix_on_save = 1
 call plug#begin('~/.config/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'github/copilot.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
-Plug 'github/copilot.vim'
 call plug#end()
