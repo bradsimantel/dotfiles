@@ -19,12 +19,14 @@ set undofile undodir=~/.config/nvim/undodir
 set scrolloff=999
 set clipboard=unnamed
 
-" Configure FZF
-set rtp+=/usr/local/opt/fzf
-nnoremap <silent> <C-p> :FZF<CR>
-
 " Show file tree
 let g:netrw_liststyle = 3
+
+" Configure Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Configure ALE for linting/fixing
 let g:ale_fixers = ['prettier', 'gofmt']
@@ -37,6 +39,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'github/copilot.vim'
 Plug 'jremmen/vim-ripgrep'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
