@@ -23,13 +23,11 @@ set clipboard=unnamed
 let g:netrw_liststyle = 3
 
 " Configure Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <silent> <C-p> <cmd>Telescope find_files<cr>
+nnoremap <silent> <C-f> <cmd>Telescope live_grep<cr>
 
 " Configure ALE for linting/fixing
-let g:ale_fixers = ['prettier', 'gofmt']
+let g:ale_fixers = ['prettier', 'gofmt', 'rubocop']
 let g:airline#extensions#ale#enabled = 1
 let g:ale_fix_on_save = 1
 
