@@ -17,7 +17,7 @@ set incsearch hlsearch
 set belloff=all
 set undofile undodir=~/.config/nvim/undodir
 set scrolloff=999
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Show file tree
 let g:netrw_liststyle = 3
@@ -35,7 +35,6 @@ let g:ale_fix_on_save = 1
 call plug#begin('~/.config/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
-Plug 'github/copilot.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
