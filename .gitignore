@@ -1,4 +1,2 @@
-.config/nvim/plugged
-.config/nvim/undodir/%*
-.config/nvim/.netrwhist
+.config/nvim/plugin
 .config/github-copilot
