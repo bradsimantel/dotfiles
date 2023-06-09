@@ -1,7 +1,7 @@
 require('colors')
-require('lsp')
 require('options')
 require('plugins')
+require('lsp')
 
 -- Pro-tips in case I forget:
 --
