@@ -13,6 +13,7 @@ require('lsp')
 -- 6. To create directories or files, use `d` and `%`
 -- 7. Use `:PackerInstall` to intall packages
 -- 8. Use `:vim /foo/ *.txt` to search across a project
+-- 9. Use `v` in netrw to open in split, then `o` or enter to open in previous pane
 --
 -- To-do items:
 --
