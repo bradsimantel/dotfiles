@@ -21,3 +21,6 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
 
+-- Open quickfix when using :vim etc.
+vim.api.nvim_create_autocmd('QuickFixCmdPost', { pattern = '[^l]*', command = 'cwindow' })
+
