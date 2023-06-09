@@ -8,11 +8,16 @@ vim.o.scrolloff = 999 -- Vertically center cursor
 vim.o.clipboard = "unnamedplus" -- Share system clipboard
 vim.o.path = vim.o.path .. "**" -- Search down into subfolders
 vim.o.wildmenu = true -- Display all matching files when we tab complete
+vim.o.smartindent = true
+vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
 
 -- Explorer settings 
 vim.g.netrw_banner = 0 -- Disable banner
 vim.g.netrw_liststyle = 3 -- Tree view
-vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignore
+vim.g.netrw_list_hide = vim.fn["netrw_gitignore#Hide"]() -- use .gitignore
 
 -- Keymaps for nav (there are others in lsp.lua)
 vim.keymap.set("n", "<space><space>", vim.cmd.Ex)
