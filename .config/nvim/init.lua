@@ -12,9 +12,15 @@ require('plugins')
 -- 5. Use `-` to get to netrw
 -- 6. To create directories or files, use `d` and `%`
 -- 7. Use `:PackerInstall` to intall packages
+-- 8. Use `:vim /foo/ *.txt` to search across a project
 --
 -- To-do items:
 --
 -- 1. Linting/formatting
 -- 2. Git gutter
 -- 3. Autocomplete
+--
+-- Links
+--
+-- 1. https://www.reddit.com/r/vim/comments/13vxits/vim_users_who_work_without_any_plugins_how_does/
+-- 2. https://www.youtube.com/watch?v=XA2WjJbmmoM
