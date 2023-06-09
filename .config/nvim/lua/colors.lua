@@ -26,27 +26,3 @@ vim.cmd("highlight StatusLine   ctermfg=15   ctermbg=8    cterm=bold")
 vim.cmd("highlight StatusLineNC ctermfg=7    ctermbg=8    cterm=NONE")
 vim.cmd("highlight VertSplit    ctermfg=7    ctermbg=8    cterm=NONE")
 vim.cmd("highlight SignColumn                ctermbg=8")
-
-vim.cmd("highlight link DimFzfFg     Normal")
-vim.cmd("highlight link DimFzfBg     Normal")
-vim.cmd("highlight link DimFzfFgPlus PmenuSel")
-vim.cmd("highlight link DimFzfBgPlus PmenuSel")
-vim.cmd("highlight link DimFzfInfo   Comment")
-
-vim.cmd("highlight DimFzfHl      ctermfg=2")
-vim.cmd("highlight DimFzfPrompt  ctermfg=12")
-vim.cmd("highlight DimFzfPointer ctermfg=1")
-vim.cmd("highlight DimFzfMarker  ctermfg=9")
-
-vim.g.fzf_colors = {
-  fg      = { 'fg', 'DimFzfFg' },
-  bg      = { 'bg', 'DimFzfBg' },
-  hl      = { 'fg', 'DimFzfHl' },
-  ['fg+'] = { 'fg', 'DimFzfFgPlus' },
-  ['bg+'] = { 'bg', 'DimFzfBgPlus' },
-  ['hl+'] = { 'fg', 'DimFzfHl' },
-  info    = { 'fg', 'DimFzfInfo' },
-  prompt  = { 'fg', 'DimFzfPrompt' },
-  pointer = { 'fg', 'DimFzfPointer' },
-  marker  = { 'fg', 'DimFzfMarker' }
-}
