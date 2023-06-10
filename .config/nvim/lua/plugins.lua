@@ -13,6 +13,7 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'github/copilot.vim'
+  use 'mhartington/formatter.nvim'
   use 'neovim/nvim-lspconfig'
   use 'wbthomason/packer.nvim'
   use 'tpope/vim-commentary'

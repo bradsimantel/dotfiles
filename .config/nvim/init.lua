@@ -2,6 +2,7 @@ require('colors')
 require('options')
 require('plugins')
 require('lsp')
+require('formatters')
 
 -- Pro-tips in case I forget:
 --
