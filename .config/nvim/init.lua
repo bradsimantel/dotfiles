@@ -3,7 +3,6 @@ require('options')
 require('plugins')
 require('lsp')
 require('formatters')
-require('linters')
 
 -- Pro-tips in case I forget:
 --

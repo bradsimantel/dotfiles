@@ -29,12 +29,15 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
 
+-- Non-LSP linters
+require('lint').linters_by_ft = { eruby = { 'erb_lint' } }
+
 -- Open quickfix when using :vim etc.
 vim.api.nvim_create_autocmd('QuickFixCmdPost', { pattern = '[^l]*', command = 'cwindow' })
 
 -- Automatically run :FormatWrite whenever you save a file
 vim.api.nvim_create_autocmd("BufWritePost", { pattern = "*", command = "FormatWrite" })
 
--- Automatically run linters when you save a file
+-- Automatically run non-LSP linters when you save a file
 vim.api.nvim_create_autocmd("BufWritePost", { callback = function() require('lint').try_lint() end })
 
