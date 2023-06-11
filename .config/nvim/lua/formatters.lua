@@ -1,7 +1,3 @@
--- Utilities for creating configurations
-local util = require "formatter.util"
-
--- Provides the Format, FormatWrite, FormatLock, and FormatWriteLock commands
 require("formatter").setup {
   filetype = {
     eruby = {
@@ -14,12 +10,4 @@ require("formatter").setup {
     },
   }
 }
-
--- Automatically run :FormatWrite whenever you save a file
-vim.api.nvim_create_augroup("FormatAutogroup", { clear = true })
-vim.api.nvim_create_autocmd("BufWritePost", {
-  group = "FormatAutogroup",
-  pattern = "*",
-  command = "FormatWrite",
-})
 

@@ -32,3 +32,9 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
 -- Open quickfix when using :vim etc.
 vim.api.nvim_create_autocmd('QuickFixCmdPost', { pattern = '[^l]*', command = 'cwindow' })
 
+-- Automatically run :FormatWrite whenever you save a file
+vim.api.nvim_create_autocmd("BufWritePost", { pattern = "*", command = "FormatWrite" })
+
+-- Automatically run linters when you save a file
+vim.api.nvim_create_autocmd("BufWritePost", { callback = function() require('lint').try_lint() end })
+
