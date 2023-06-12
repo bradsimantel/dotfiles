@@ -2,12 +2,10 @@ require('colors')
 require('options')
 require('plugins')
 require('lsp')
-require('formatters')
 
 -- Pro-tips in case I forget:
 --
 -- 1. Use `:find` for fuzzy file search, like `:find *user`
--- 2. Use `:! git add %` to add the current file to git
 -- 3. Use `:! sed -i 's/old/new/g' *.txt` for find and replace across a project
 -- 4. Use `:%s/old/new/g` for find and replace within a file
 -- 5. Use `-` to get to netrw

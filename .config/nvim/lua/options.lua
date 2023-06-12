@@ -30,7 +30,16 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
 
 -- Non-LSP linters
-require('lint').linters_by_ft = { eruby = { 'erb_lint' } }
+require('lint').linters_by_ft = {
+  eruby = { 'erb_lint' }
+}
+
+-- Non-LSP formatters
+require("formatter").setup {
+  filetype = {
+    eruby = { function() return { exe = "htmlbeautifier", stdin = true } end }
+  }
+}
 
 -- Open quickfix when using :vim etc.
 vim.api.nvim_create_autocmd('QuickFixCmdPost', { pattern = '[^l]*', command = 'cwindow' })
