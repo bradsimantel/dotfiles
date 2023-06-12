@@ -1,15 +1,15 @@
 -- In diffs, added lines are green, changed lines are yellow, deleted lines are
 -- red, and changed text (within a changed line) is bright yellow and bold.
-vim.cmd("highlight DiffAdd        ctermfg=0    ctermbg=2")
-vim.cmd("highlight DiffChange     ctermfg=0    ctermbg=3")
-vim.cmd("highlight DiffDelete     ctermfg=0    ctermbg=1")
-vim.cmd("highlight DiffText       ctermfg=0    ctermbg=11   cterm=bold")
+vim.cmd("highlight DiffAdd      ctermfg=0    ctermbg=2")
+vim.cmd("highlight DiffChange   ctermfg=0    ctermbg=3")
+vim.cmd("highlight DiffDelete   ctermfg=0    ctermbg=1")
+vim.cmd("highlight DiffText     ctermfg=0    ctermbg=11   cterm=bold")
 
 -- Invert selected lines in visual mode
-vim.cmd("highlight Visual         ctermfg=NONE ctermbg=NONE cterm=inverse")
+vim.cmd("highlight Visual       ctermfg=NONE ctermbg=NONE cterm=inverse")
 
 -- Highlight search matches in black, with a yellow background
-vim.cmd("highlight Search         ctermfg=0    ctermbg=11")
+vim.cmd("highlight Search       ctermfg=0    ctermbg=11")
 
 -- Dim line numbers, comments, color columns, the status line, splits and sign
 -- columns.
