@@ -1,6 +1,6 @@
+require('plugins')
 require('colors')
 require('options')
-require('plugins')
 require('lsp')
 
 -- Pro-tips in case I forget:
@@ -16,9 +16,7 @@ require('lsp')
 --
 -- To-do items:
 --
--- 1. Linting/formatting
--- 2. Git gutter
--- 3. Autocomplete
+-- 1. Autocomplete
 --
 -- Links
 --
