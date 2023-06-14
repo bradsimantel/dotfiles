@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
+  use 'tpope/vim-vinegar'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
