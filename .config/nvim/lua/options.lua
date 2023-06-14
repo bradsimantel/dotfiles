@@ -20,10 +20,11 @@ vim.g.netrw_banner = 0 -- Disable banner
 vim.g.netrw_liststyle = 3 -- Tree view
 vim.g.netrw_altv = 1 -- Open to the right
 vim.g.netrw_winsize = 75 -- Open file with 75% width
-vim.g.netrw_list_hide = vim.fn["netrw_gitignore#Hide"]() -- use .gitignore
 
 -- Keymaps for nav (there are others in lsp.lua)
 vim.keymap.set("n", "<space><space>", vim.cmd.Ex)
+vim.keymap.set('n', '<space>f', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
+vim.keymap.set('n', '<space>g', "<cmd>lua require('fzf-lua').live_grep()<CR>", { silent = true })
 vim.keymap.set('n', '<C-h>', '<C-w>h', {noremap = true})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
