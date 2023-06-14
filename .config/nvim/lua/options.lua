@@ -20,13 +20,11 @@ vim.g.netrw_winsize = 75 -- Open file with 75% width
 -- Keymaps for nav (there are others in lsp.lua)
 vim.keymap.set('n', '<space>f', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
 vim.keymap.set('n', '<space>g', "<cmd>lua require('fzf-lua').live_grep()<CR>", { silent = true })
+vim.keymap.set('n', '<space>a', '<ALT>A', {noremap = true})
 vim.keymap.set('n', '<C-h>', '<C-w>h', {noremap = true})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
-
--- Find and replace
-vim.api.nvim_create_user_command('Replace', '!fd --type file --exec sed -i -e <f-args> {}', { nargs = '*' })
 
 -- Non-LSP linters
 require('lint').linters_by_ft = {
@@ -39,6 +37,9 @@ require("formatter").setup {
     eruby = { function() return { exe = "htmlbeautifier", stdin = true } end }
   }
 }
+
+-- FZF config
+require'fzf-lua'.setup({ keymap = { fzf = { ["ctrl-a"] = "select-all+accept" } } })
 
 -- Open quickfix when using :vim etc.
 vim.api.nvim_create_autocmd('QuickFixCmdPost', { pattern = '[^l]*', command = 'cwindow' })
