@@ -13,9 +13,8 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 
 -- Explorer settings 
+vim.g.netrw_banner = 0 -- Disable banner
 vim.g.netrw_liststyle = 3 -- Tree view
-vim.g.netrw_altv = 1 -- Open to the right
-vim.g.netrw_winsize = 75 -- Open file with 75% width
 
 -- Keymaps for nav (there are others in lsp.lua)
 vim.keymap.set('n', '<space>f', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
