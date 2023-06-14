@@ -25,6 +25,9 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
 
+-- Find and replace
+vim.api.nvim_create_user_command('Replace', '!fd --type file --exec sed -i -e <f-args> {}', { nargs = '*' })
+
 -- Non-LSP linters
 require('lint').linters_by_ft = {
   eruby = { 'erb_lint' }
