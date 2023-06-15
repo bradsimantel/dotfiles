@@ -16,10 +16,12 @@ vim.o.softtabstop = 2
 vim.g.netrw_banner = 0 -- Disable banner
 vim.g.netrw_liststyle = 3 -- Tree view
 
--- Keymaps for nav (there are others in lsp.lua)
+-- Keymaps
+vim.keymap.set('n', '<space><space>', vim.cmd.Ex)
 vim.keymap.set('n', '<space>f', "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
 vim.keymap.set('n', '<space>g', "<cmd>lua require('fzf-lua').live_grep()<CR>", { silent = true })
-vim.keymap.set('n', '<space>a', '<ALT>A', {noremap = true})
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
 vim.keymap.set('n', '<C-h>', '<C-w>h', {noremap = true})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
 vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
