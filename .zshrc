@@ -26,6 +26,6 @@ alias dot="cd ~/Projects/bradsimantel/dotfiles"
 alias vim="nvim"
 
 # New Relic
-alias vpn="newrelic-chi-vpn connect full"
+alias vpn="newrelic-chi-vpn connect full $(op item get "PAM" --otp)"
 alias novpn="newrelic-chi-vpn disconnect"
-alias vlt="newrelic-vault us login -method=ldap username=bsimantel password=$(security find-generic-password -gs chi-vpn-password 2>&1 | grep -E '^password:' | sed 's:^password\: "\(.*\)"$:\1:' | tr -d '\n') method=push"
+alias vlt="newrelic-vault us login -method=ldap username=bsimantel password=$(op item get "PAM" --fields password) method=push"
