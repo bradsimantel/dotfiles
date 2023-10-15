@@ -12,6 +12,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+  use 'airblade/vim-gitgutter'
   use 'ibhagwan/fzf-lua'
   use 'mfussenegger/nvim-lint'
   use 'mhartington/formatter.nvim'
