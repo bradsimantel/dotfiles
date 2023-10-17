@@ -27,4 +27,7 @@ alias vim="nvim"
 # New Relic
 vpn() { newrelic-chi-vpn connect full "$(op item get 'PAM' --otp)" }
 novpn() { newrelic-chi-vpn disconnect }
-vlt() { newrelic-vault us login -method=ldap username=bsimantel password="$(op item get 'PAM' --fields password)" method=push }
+vlt() {
+  read "?Enter Okta Verify MFA code: " mfa
+  newrelic-vault us login -method=okta username=bsimantel totp=$mfa password="$(op item get 'PAM' --fields password)"
+}
