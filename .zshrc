@@ -1,3 +1,6 @@
+# Set Helix as default editor
+export EDITOR=hx
+
 # Configure NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -5,9 +8,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Configure rbenv
 eval "$(rbenv init - zsh)"
-
-# Set FZF to respect gitignore by piping through FD
-export FZF_DEFAULT_COMMAND='fd --type file'
 
 # Load version control information
 autoload -Uz vcs_info
@@ -20,11 +20,19 @@ zstyle ':vcs_info:git:*' formats ' %F{3}%b%f'
 setopt PROMPT_SUBST
 PROMPT='%F{5}%n@%m %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
+# Set up Yazi
+yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Aliases
 alias dot="cd ~/Projects/bradsimantel/dotfiles"
-alias vim="nvim"
+alias lg="lazygit"
 
 # New Relic
-vpn() { newrelic-chi-vpn connect full "$(op item get 'PAM' --otp)" }
-novpn() { newrelic-chi-vpn disconnect }
 vlt() { newrelic-vault us login -method=oidc }
