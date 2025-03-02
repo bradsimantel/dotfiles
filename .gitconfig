@@ -1,6 +1,6 @@
 [user]
 name = Brad Simantel
-email = brad@ottter.com
+email = brad@simantel.org
 
 [alias]
 undo = reset --soft HEAD~1

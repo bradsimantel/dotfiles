@@ -1,6 +1,6 @@
 #!/bin/esh
 
-brew install fd fzf rg git helix yazi lazygit
+brew install fd fzf rg git nvim
 
 ln -sfv $PWD/.gitconfig ~
 ln -sfv $PWD/.globalgitignore ~
