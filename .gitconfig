@@ -5,17 +5,21 @@ email = brad@simantel.org
 [alias]
 undo = reset --soft HEAD~1
 
-[diff]
-tool = nvimdiff
+[mergetool "vscode"]
+cmd = code --wait $MERGED
 
 [merge]
-tool = nvimdiff
+tool = vscode
 
-[mergetool "nvimdiff"]
-path = nvim
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
+
+[diff]
+tool = vscode
 
 [core]
 excludesfile = ~/.globalgitignore
+editor = code --wait --new-window
 
 [init]
 defaultBranch = main

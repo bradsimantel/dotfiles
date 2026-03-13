@@ -5,7 +5,7 @@ export EDITOR=code
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Set up Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 # Set up Mise
 eval "$(mise activate zsh)"

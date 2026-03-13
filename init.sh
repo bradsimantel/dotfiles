@@ -1,6 +1,6 @@
 #!/bin/esh
 
-brew install mise fd fzf rg git nvim
+brew install mise git
 
 ln -sfv $PWD/.gitconfig ~
 ln -sfv $PWD/.globalgitignore ~
