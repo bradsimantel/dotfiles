@@ -18,5 +18,12 @@ zstyle ':vcs_info:git:*' formats ' %F{3}%b%f'
 setopt PROMPT_SUBST
 PROMPT='%F{5}%n@%m %F{2}%~%f${vcs_info_msg_0_} %F{1}$%f '
 
+# Load secrets
+if [ -f ~/.env ]; then
+  set -a
+  source ~/.env
+  set +a
+fi
+
 # Aliases
 alias dot="cd ~/Projects/bradsimantel/dotfiles"
