@@ -8,7 +8,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Set up Mise
-eval "$(/Users/bs/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # Load version control information
 autoload -Uz vcs_info
