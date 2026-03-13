@@ -1,6 +1,9 @@
 # Set Code as default editor
 export EDITOR=code
 
+# Add Go binaries to PATH
+export PATH="$PATH:$(go env GOPATH)/bin"
+
 # Set up Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
